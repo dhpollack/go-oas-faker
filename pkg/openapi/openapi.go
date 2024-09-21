@@ -29,7 +29,8 @@ func RenderExample() {
 	if errs != nil {
 		panic(errs)
 	}
-	dummyRequestModel := v3Model.Model.Components.Schemas["DummyRequest"]
+	schemas := *v3Model.Model.Components.Schemas
+	dummyRequestModel := schemas.GetOrZero("DummyRequest")
 	dummyRequest := dummyRequestModel.Schema()
 	fakeDummyRequest, err := mg.GenerateMock(dummyRequest, "")
 	if err != nil {

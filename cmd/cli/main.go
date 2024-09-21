@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/dhpollack/go-oas-faker/openapi"
+	openapi "github.com/dhpollack/go-oas-faker/openapi/v1"
 )
 
 func main() {
