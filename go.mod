@@ -1,4 +1,4 @@
-module github.com/dhpollack/go-oas-faker/v1
+module github.com/dhpollack/go-oas-faker
 
 go 1.23.1
 
